@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assign1-Que4</title>
+
+</head>
+
+<body>
+    <!-- Program to display only elements containing 'a' in them from a array -->
+
+
+    <script>
+        let array = ["ajay", "pratik", "shubh", "mdhu"];
+        let result = [];
+        let a;
+        let l = 0;
+
+        for (let i = 0; i < array.length; i++) {
+            r = array[i].indexOf("a");
+            if (r >= 0) {
+                result[l] = array[i];
+                l++;
+            }
+        }
+        if (result.length > 0) {
+            console.log("Elements containing 'a':");
+            for (let i = 0; i < result.length; i++) {
+                console.log(result[i]);
+            }
+        }
+        else {
+            console.log("No element found");
+        }
+
+    </script>
+
+</body>
+
+
+
+</html>
