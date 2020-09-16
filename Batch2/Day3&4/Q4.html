@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Assign-2 Question-4
+    </title>
+</head>
+
+<body>
+
+
+    <script>
+
+        let arrays = [
+            {
+                name: "ajay",
+                age: 23,
+                country: "India",
+                hobbies: [
+                    "playing games", "reading books", "watching movies"
+                ]
+            },
+            {
+                name: "ankit",
+                age: 35,
+                country: "Sinagapor",
+                hobbies: [
+                    "Rading", "writing", "playing"
+                ]
+            },
+            {
+                name: "shubham",
+                age: 25,
+                country: "India",
+                hobbies: [
+                    "writing", "gyming", "watching movies"
+                ]
+            },
+        ];
+
+        function lessAge() {
+            arrays.forEach(function (array) {
+                if (array.age < 30) {
+
+                    console.log(array);
+                }
+            });
+        }
+
+        function countryIndia() {
+            arrays.forEach(function (array) {
+                if (array.country == "India") {
+
+                    console.log(array);
+
+                }
+            });
+        }
+        lessAge();
+        countryIndia();
+    </script>
+</body>
+
+</html>

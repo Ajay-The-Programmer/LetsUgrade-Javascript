@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Assign2-Que2
+    </title>
+    <style>
+        .firstfield {
+            height: 100px;
+            width: 500px;
+            color: red;
+        }
+
+        .transfer {
+
+            width: 510px;
+            height: 100px;
+            background: black;
+            color: red;
+            font-size: 30px;
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Create a webpage containing two input fields and a button. -->
+
+    <input type="text" value="I am FullStack Developer" class="firstfield">
+    <br />
+    <input type="button" value="Transfer" class="transfer" onclick="transferText()">
+    <br />
+    <input type="text" value="" class="firstfield">
+
+
+    <script>
+        function transferText() {
+
+            const ele = document.getElementsByClassName("firstfield");
+            console.log(ele);
+            const ele2 = ele[0].value;
+            console.log(ele2);
+            ele[1].value = ele2;
+        }
+    </script>
+</body>
+
+</html>

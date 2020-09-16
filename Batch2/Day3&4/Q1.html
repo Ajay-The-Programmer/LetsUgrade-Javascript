@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Assign2-Que1
+    </title>
+</head>
+<style>
+    .button {
+
+        width: 100px;
+        height: 60px;
+        border: 5px solid yellow;
+    }
+
+    #image {
+
+        width: 700px;
+        height: 500px;
+        border: 10px solid red;
+    }
+</style>
+
+<body>
+
+    <!--Create a webpage containing an image and three buttons-->
+
+    <img id="image"
+        src="https://assets.simpleviewinc.com/simpleview/image/upload/crm/kansas/pexels-photo-4621180-6f39981e5056a36_6f3998f8-5056-a36a-0b38acaee28cfa60.jpg">
+    <br />
+    <input type="button" class="button" onclick="firstButton()" value="Button1">
+    <input type="button" class="button" onclick="secondButton()" value="Button2">
+    <input type="button" class="button" onclick="thirdButton()" value="Button3">
+
+
+
+
+    <script>
+
+        function firstButton() {
+            const ele = document.getElementById("image");
+            const newURL = "https://assets.simpleviewinc.com/simpleview/image/upload/crm/kansas/pexels-photo-4621180-6f39981e5056a36_6f3998f8-5056-a36a-0b38acaee28cfa60.jpg";
+            ele.src = newURL;
+        }
+        function secondButton() {
+            const ele = document.getElementById("image");
+            const newURL = "https://www.seoclerk.com/pics/574791-1ufA3v1513362249.jpg";
+            ele.src = newURL;
+        }
+        function thirdButton() {
+            const ele = document.getElementById("image");
+            const newURL = "https://images.all-free-download.com/images/graphicthumb/butterfly_flower_01_hd_pictures_166973.jpg";
+            ele.src = newURL;
+        }
+
+
+    </script>
+</body>
+
+</html>
