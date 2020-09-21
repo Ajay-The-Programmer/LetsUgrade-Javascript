@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bus Application</title>
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .data {
+            height: auto;
+            width: 70%;
+            margin-left: 15%;
+            margin-top: 50px;
+            padding: 10px;
+            background-color: rgb(151, 144, 144);
+        }
+
+        .table {
+            margin-top: 20px;
+            width: 100%;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        th,
+        td {
+            height: 40px;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .submit,
+        input {
+            width: 180px;
+            height: 33px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="data">
+        <h1>Buses</h1>
+        <div class="form">
+            <form onsubmit="addbuses(event)">
+                <input type=" text" id="name" required placeholder="Name" />
+                <input type="text" id="source" required placeholder="Source" />
+                <input type="text" id="destination" required placeholder="Destination" />
+                <input type="text" id="number" required placeholder="Number" />
+                <input type="number" id="passengerCapacity" required placeholder="PassengerCapacity" />
+                <button type="submit" class="submit">Add Buses</button>
+            </form>
+        </div>
+        <br />
+        <div class="form">
+            <form>
+                <input type="text" id="searchBus" onkeyup="searchBySourceAndDestination()"
+                    placeholder="Start searching here" />
+            </form>
+        </div>
+        <table border="1" class="table" cellspacing="0">
+            <thead>
+                <th>Sr.no</th>
+                <th>Name</th>
+                <th>Source</th>
+                <th>Destination</th>
+                <th>Number</th>
+                <th>PassengerCapacity</th>
+
+            </thead>
+            <tbody id="tdata"></tbody>
+        </table>
+    </div>
+
+    <script src="Q2.js"></script>
+</body>
+
+</html>
